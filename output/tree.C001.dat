@@ -1,0 +1,45 @@
+time 0.10496
+open C001 0 0 600 600 0 15 0
+open C001a 0 1168 16 1200 1 9 0
+open C001aa 0 2336 16 2400 2 9 0
+open C001aaa 0 4688 16 4800 3 9 0
+close C001aaa
+open C001aab 16 4688 32 4800 3 8 0
+close C001aab
+close C001aa
+open C001ab 16 2336 32 2400 2 8 0
+open C001aba 32 4688 48 4800 3 8 0
+close C001aba
+open C001abb 48 4704 64 4800 3 8 0
+close C001abb
+close C001ab
+close C001a
+open C001b 16 1168 32 1200 1 8 0
+open C001ba 32 2352 48 2400 2 8 0
+open C001baa 64 4704 80 4800 3 8 0
+close C001baa
+open C001bab 80 4704 96 4800 3 8 0
+close C001bab
+close C001ba
+open C001bb 48 2352 64 2400 2 8 0
+open C001bba 96 4720 112 4800 3 8 0
+close C001bba
+open C001bbb 112 4720 128 4800 3 8 0
+close C001bbb
+close C001bb
+close C001b
+open C001c 32 1184 48 1200 1 8 0
+open C001ca 64 2368 80 2400 2 8 0
+open C001caa 128 4736 144 4800 3 8 0
+close C001caa
+open C001cab 144 4752 160 4800 3 8 0
+close C001cab
+close C001ca
+open C001cb 80 2384 96 2400 2 8 0
+open C001cba 160 4768 176 4800 3 8 0
+close C001cba
+open C001cbb 176 4784 192 4800 3 8 0
+close C001cbb
+close C001cb
+close C001c
+close C001
