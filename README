@@ -1,6 +1,7 @@
 To create the executable arcos:
 
-- first create library libconfig.
+- first create library libconfig. 
+  libconfig can be downloaded from www.hyperrealm.com/libconfig
   Go to directory libconfig-1.4.9/lib  and give the following command
   make all
 
