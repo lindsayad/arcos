@@ -1,19 +1,24 @@
 To create the executable arcos:
 
 - first create library libconfig. 
-  libconfig can be downloaded from www.hyperrealm.com/libconfig.Here we already included the package libconfig.
+  libconfig can be downloaded from www.hyperrealm.com/libconfig. 
+  Here we already included the package libconfig.
   
-- Go to directory libconfig-1.4.9/lib  and give the following command
+- Go to directory libconfig-1.4.9/lib  and give the following command:
   make all
+  
+- The arcos code make use of the Poisson solver from Fishpack.
+  The Fortran90 package fish90 has also been added and the library file
+  will be created together with the arcos library.
 
-- next, return to the root directory arcos and give the following command
+- Next, return to the root directory arcos and give the following command:
   make all
 
 Now you have the executable arcos, which needs the input files from
 directory input. ./arcos also needs an output directory. The name is given in 
 /input/default.cfg by "output_dir". Here we choose directory output. 
 
-If output does not exist, create this directory:
+If the directory output does not exist, create this directory:
 make output
 
 In this directory many files for visualization will be written. For more details see the documentation:
