@@ -1,4 +1,4 @@
-These are my (Alex Lindsay's) instructions for building the arcos executable and the libconfig libraries. The source code in this repository is taken from the Multiscale Dynamics Group at CWI (https://scm.cwi.nl/MD/arcos).
+These are my (Alex Lindsay's) instructions for building the arcos executable and the libconfig libraries. The source code in this repository is taken from the Multiscale Dynamics Group at CWI (https://scm.cwi.nl/MD/arcos). If you make use of this code, I politely request that you cite the CWI group.
 
 Dependencies: FFTW, which is a C subroutine library for computing the discrete Fourier transform (DFT) in one or more dimensions. The source for FFTW can be obtained from http://www.fftw.org/download.html
 
