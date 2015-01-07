@@ -1,26 +1,31 @@
-To create the executable arcos:
+These are my (Alex Lindsay's) instructions for building the arcos executable and the libconfig libraries. The source code in this repository is taken from the Multiscale Dynamics Group at CWI (https://scm.cwi.nl/MD/arcos).
 
-- first create library libconfig. 
-  libconfig can be downloaded from www.hyperrealm.com/libconfig. 
-  Here we already included the package libconfig.
-  
-- Go to directory libconfig-1.4.9/lib  and give the following command:
-  make all
-  
-- The arcos code make use of the Poisson solver from Fishpack.
-  The Fortran90 package fish90 has also been added and the library file
-  will be created together with the arcos library.
+Dependencies: FFTW, which is a C subroutine library for computing the discrete Fourier transform (DFT) in one or more dimensions. The source for FFTW can be obtained from http://www.fftw.org/download.html
 
-- Next, return to the root directory arcos and give the following command:
-  make all
+Build procedure: 
 
-Now you have the executable arcos, which needs the input files from
-directory input. ./arcos also needs an output directory. The name is given in 
-/input/default.cfg by "output_dir". Here we choose directory output. 
+First we build the libconfig libraries which are used for reading, manipulating, and writing arcos input/output files. The homepage for libconfig can be found at http://www.hyperrealm.com/libconfig/ 
 
-If the directory output does not exist, create this directory:
-make output
+1) Enter arcos root directory
 
-In this directory many files for visualization will be written. For more details see the documentation:
+2) cd libconfig-1.4.9
 
-file:///?????
+3) ./configure
+
+4) make
+
+5) make install (may have to run "sudo make install" depending on your permissions)
+
+Now we build the arcos executable
+
+6) cd ..
+
+7) mkdir arcos_f90/lib
+
+8) mkdir fish90/lib
+
+9) make all
+
+You should now see the arcos executable in your root arcos directory! For instructions on how to use the arcos executable, please go to CWI's documentation at http://cwimd.nl/other_files/arcos_html/md_MANUAL.html#sect_software
+
+
