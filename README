@@ -34,6 +34,8 @@ Now we build the arcos executable
 
 9) make all
 
+10) You may have to run ldconfig so arcos will be able to find the shared libconfig libraries
+
 You should now see the arcos executable in your root arcos directory! For 
 instructions on how to use the arcos executable, please go to CWI's 
 documentation at 
